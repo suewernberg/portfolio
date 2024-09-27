@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suzanne - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("cWMsKFvSEe7lhNEF6");
+      })();
+    </script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">SWM</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="indexen.html"><img src="./assets/anglais3.png" alt="EN"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">SWM</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="indexen.html" onclick="toggleMenu()"><img src="./assets/anglais3.png" alt="EN"></a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/mwa.png" alt="Dessin photo de profil" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Suzanne Wernberg-Møller</h1>
+        <p class="section__text__p2">Étudiante à Epitech</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV2024FR.pdf')"
+          >
+            CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/suzanne-wernberg-02825b1a1/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/suewernberg', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Découvrez</p>
+      <h1 class="title">Mon Profil</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic5.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Expérience icône"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <br>
+              <p>2 ans en Marketing Digital <br>1 an de No-Code</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icône"
+                class="icon"
+              />
+              <h3>Éducation</h3>
+              <br>
+              <p>License LEA<br />MBA Manager d'Affaires<br>MSc Transformation Digitale</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Après avoir travaillé pour un cabinet axé sur la technologie et le digital, j'ai été fascinée par les nombreuses opportunités offertes par le secteur. Cette expérience a éveillé mon intérêt pour l'informatique et le digital, et a été à l'origine de ma décision de me reconvertir dans la transformation digitale. Je suis convaincue que mes compétences acquises précédemment, combinées à mon parcours varié, seront des atouts précieux pour réussir dans cette nouvelle voie.            
+            </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Flèche icone"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages de Programmation</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Icône HTML"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Icone CSS"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Icone python"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Icone javascript"
+                  class="icon"
+                />
+                <div>
+                  <h3>JS</h3>
+                  <p>Novice</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Outils<br></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/canva.png"
+                  alt="Icône Canva"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/airtable.png"
+                  alt="Icone airtable"
+                  class="icon"
+                />
+                <div>
+                  <h3>Airtable</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/softr.png"
+                  alt="Icone softr"
+                  class="icon"
+                />
+                <div>
+                  <h3>Softr</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/notion.png"
+                  alt="Icone Notion"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Icone Flèche"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Parcourez mes derniers</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video autoplay muted loop
+                src="./assets/projet1.mov"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Recrutonsensemble</h2>
+            <p>Site internet No-Code</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.recrutonsensemble.com/', '_blank')"
+              >
+                Voir le site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video autoplay muted loop
+                src="./assets/projet2.mov"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Notion</h2>
+            <p>Outil d'organisation No-Code</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://susulastreet.notion.site/MDA-3a5ff57c83e44db492400354ffc14ece', '_blank')"
+              >
+                Voir le site
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video autoplay muted loop
+                src="./assets/projet3.mp4"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hangman Game</h2>
+            <p>avec Pygame</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/suewernberg/hangman', '_blank')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrez en</p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:suewernberg@yahoo.com">suewernberg@yahoo.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/suzanne-wernberg-02825b1a1/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+      <div class="contact-form-container">
+        <h1>... ou écrivez votre message ici !</h1>
+        <form id="contact-form">
+          <input type="text" id="name" name="user_name" placeholder="Votre nom" required>
+          <input type="email" id="email" name="user_email" placeholder="Votre e-mail" required>
+          <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p id="status-message"></p>
+      </div>
+  
+  <script>
+      const form = document.getElementById('contact-form');
+      const statusMessage = document.getElementById('status-message');
+
+      form.addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('service_u0ryy2l', 'template_fmt9j0x', form)
+              .then(function() {
+                  statusMessage.textContent = 'Message envoyé !';
+                  form.reset();
+              }, function(error) {
+                  statusMessage.textContent = 'Erreur. Veuillez essayer à nouveau.';
+                  console.log('Failed to send message:', error);
+              });
+      });
+  </script>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propros</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Suzanne Wernberg-Møller. Tous Droits Réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
